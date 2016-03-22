@@ -42,11 +42,19 @@
             },
             {
                 "key": "docker pause",
+<<<<<<< HEAD
                 "val": "pauses a running container freezing it in place"
             },
             {
                 "key": "docker unpause",
                 "val": "resumes all processes in a container"
+=======
+                "val": "pauses a running container"
+            },
+            {
+                "key": "docker unpause",
+                "val": "unpause a running container"
+>>>>>>> 5a65e747dcd102340569a8075f10cb3a173e200a
             },
             {
                 "key": "docker rm",

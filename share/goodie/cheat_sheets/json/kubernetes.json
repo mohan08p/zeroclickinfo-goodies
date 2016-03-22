@@ -12,7 +12,7 @@
 	    "basic kubernetes"
     ],
     "section_order": [
-	"Physical Layout",
+        "Physical Layout",
         "Abstraction Overview",
         "Abstraction Details"
     ],
@@ -27,7 +27,7 @@
                 "val": "Get cluster info"
             },
             {
-                "key": "kubectl config view ",
+                "key": "kubectl config view",
                 "val": "Get configuration info"
             },
             {
@@ -38,7 +38,7 @@
                 "key": "kubectl describe node123",
                 "val": "Get info about 'node123'"
             }
-            ],
+        ],
         "Abstraction Overview": [
             {
                 "key": "kubectl get pods",
@@ -51,7 +51,7 @@
 	        {
                 "key": "kubectl get rc",
                 "val": "List replication controllers"
-            }, 
+            },
             {
                 "key": "kubectl describe rc nginx",
                 "val": "Get info about replication controller 'nginx'"
@@ -62,7 +62,7 @@
             },
 	        {
                 "key": "kubectl get svc",
-                "val": "List services "
+                "val": "List services"
             },
 	        {
                 "key": "kubectl describe svc nginx",
@@ -79,8 +79,20 @@
             {
                 "key": "kubectl delete svc nginx",
                 "val": "Remove a service named nginx"
+            },
+            {
+                "key": "kubectl exec nginx-hl2nb /bin/sh -c $NAME_OF_CONTAINER",
+                "val": "Debug container NAME_OF_CONTAINER"
+            },
+            {
+                "key": "kubectl logs -f nginx-hl2nb -c $NAME_OF_CONTAINER",
+                "val": "See the logs of NAME_OF_CONTAINER"
+            },
+            {
+                "key": "kubectl get cs",
+                "val": "Check the status of components such as the scheduler, etcd, and controller manager"
             }
-            ],
+        ],
          "Abstraction Details": [
             {
                 "key": "kubectl run ubuntu --image=ubuntu",
@@ -88,11 +100,11 @@
             },
             {
                 "key": "kubectl create -f nginx-rc.yaml",
-                "val": "To create a RC from a manifest "
+                "val": "To create a RC from a manifest"
             },
             {
                 "key": "kubectl get rc --namespace=\"kube-system\"",
-                "val": "To list all RCs in a certain namespace "
+                "val": "To list all RCs in a certain namespace"
             },
 	        {
                 "key": "kubectl scale --replicas=2 rc nginx",
@@ -116,7 +128,7 @@
             },
 	        {
                 "key": "kubectl get secrets",
-                "val": "To list all secrets which are used to handle sensetive information such as password or API credentials"
+                "val": "To list all secrets which are used to handle sensitive information such as password or API credentials"
             },
 	        {
                 "key": "kubectl get pods --show-all",
@@ -134,6 +146,6 @@
                 "key": "kubectl get quota",
                 "val": "To see the resource quotas of a namespace use"
             }
-            ]
+        ]
      }
 }
